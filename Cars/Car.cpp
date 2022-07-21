@@ -2,18 +2,16 @@
 #include <iostream>
 
 
-//Constructors
+// Constructors
 // Default constructor:
-Car::Car()
+Car::Car() : Vehicle()
 {
-    std::cout << "default constructor" << std::endl;
+    std::cout << " Car default constructor" << std::endl;
 
-    m_year = 2022;
-    m_miles = 0;
     m_brand = "Unspecified";
 }
 
-Car::Car(int year, int miles, std::string brand)
+Car::Car(int year, int miles, std::string brand) : Vehicle(year, miles)
 {
     m_year = year;
     m_miles = miles;
@@ -23,13 +21,13 @@ Car::Car(int year, int miles, std::string brand)
 // Destructor
 Car::~Car()
 {
-    std::cout << "destructor!" << std::endl;
+    std::cout << " Car destructor!" << std::endl;
 }
 
-// Member variables
-int m_year;
-int m_miles;
-std::string m_brand;
+//// Member variables
+//int m_year;
+//int m_miles;
+//std::string m_brand;
 
 // Member functions
 void Car::Display()
@@ -41,5 +39,7 @@ void Car::Display()
 
 void Car::Drive(int miles)
 {
-    m_miles += m_miles;
+    m_miles += miles;
+    std::cout << "This car has traveled a total of " << miles << " miles." << std::endl;
+
 }

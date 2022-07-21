@@ -1,4 +1,6 @@
 #include "Car.h"
+#include "Boat.h"
+#include "Airplane.h"
 #include <iostream>
 #include <string>
 
@@ -22,4 +24,13 @@ int main()
 
     Car myCar;
     myCar.Display();
+    myCar.Drive(250);
+
+    Boat myBoat;
+    myBoat.Display();
+    myBoat.Drive(100);
+
+    Airplane myAirplane;
+    myAirplane.Display();
+    myAirplane.Drive(5000);
 }
