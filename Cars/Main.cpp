@@ -23,14 +23,14 @@ int main()
     pCar = nullptr;*/
 
     Car myCar;
-    myCar.Display();
-    myCar.Drive(250);
+    myCar.Display(2018, 25000, "Chevy Cruz");
+    myCar.Drive(25000);
 
     Boat myBoat;
-    myBoat.Display();
-    myBoat.Drive(100);
+    myBoat.Display(2017, 3500, "Yamaha");
+    myBoat.Drive(3500);
 
     Airplane myAirplane;
-    myAirplane.Display();
-    myAirplane.Drive(5000);
+    myAirplane.Display(2019, 15039718, "Delta");
+    myAirplane.Drive(15039718);
 }

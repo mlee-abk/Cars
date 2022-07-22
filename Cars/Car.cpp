@@ -37,6 +37,13 @@ void Car::Display()
     std::cout << "Brand: " << m_brand << std::endl;
 }
 
+void Car::Display(int year, int miles, std::string brand)
+{
+    std::cout << "Year: " << year << std::endl;
+    std::cout << "Miles: " << miles << std::endl;
+    std::cout << "Brand: " << brand << std::endl;
+}
+
 void Car::Drive(int miles)
 {
     m_miles += miles;

@@ -24,5 +24,6 @@ public:
 
 	// Member functions
 	void Display();
+	void Display(int year, int miles, std::string airline);
 	void Drive(int miles);
 };

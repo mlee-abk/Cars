@@ -37,6 +37,13 @@ void Airplane::Display()
     std::cout << "Airline: " << m_airline << std::endl;
 }
 
+void Airplane::Display(int year, int miles, std::string airline)
+{
+    std::cout << "Year: " << year << std::endl;
+    std::cout << "Miles: " << miles << std::endl;
+    std::cout << "Airline: " << airline << std::endl;
+}
+
 void Airplane::Drive(int miles)
 {
     m_miles += miles;

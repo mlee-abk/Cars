@@ -18,8 +18,8 @@ public:
 	~Vehicle();
 
 	// Member functions
-	void Display();
-
+	virtual void Display();
+	
 	// Pure virtual (abstract) member function
 	virtual void Drive(int miles)=0;
 
